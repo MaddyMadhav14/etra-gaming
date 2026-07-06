@@ -83,3 +83,13 @@
     gap: 18px;
   }
 }
+.service-card:hover {
+  transform: translateY(-12px);
+  background: linear-gradient(135deg, #ff5b7d, #8b5cf6);
+  color: #ffffff;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: #ffffff;
+}
