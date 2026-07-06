@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="hero-content">
           <p className="hero-tag">We Create</p>
 
-          <h1>
+          <h1 className="hero-title">
             Imagination <br />
             <span>in Motion</span>
           </h1>
