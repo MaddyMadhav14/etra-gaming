@@ -845,3 +845,42 @@ text-align:center;
     color: #ffffff !important;
   }
 }
+@media (max-width: 390px) {
+  .about-section,
+  .services-section,
+  .projects-section {
+    padding-left: 18px;
+    padding-right: 18px;
+    overflow: hidden;
+  }
+
+  .about-content,
+  .services-content,
+  .projects-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .stat-card {
+    width: 100%;
+    min-width: 0;
+    padding: 22px 12px;
+  }
+
+  .about-title,
+  .section-title {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
