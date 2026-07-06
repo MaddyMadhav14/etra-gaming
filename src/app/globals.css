@@ -921,18 +921,6 @@ body {
     max-width: 100%;
   }
 
-  .hero-buttons {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
-
   .stats-grid {
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -942,5 +930,56 @@ body {
   .stat-card {
     width: 100%;
     min-width: 0;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(42px, 12vw, 58px);
+    line-height: 1.05;
+    max-width: 100%;
+  }
+
+  .hero-title span {
+    display: block;
+  }
+
+  .hero-text,
+  .about-text {
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  .about-content,
+  .stats-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .stat-card {
+    width: 100%;
+    min-width: 0;
+    padding: 24px 12px;
+  }
+
+  .stat-card h3 {
+    font-size: 38px;
+  }
+
+  .stat-card p {
+    font-size: 12px;
+    line-height: 1.5;
+    word-break: normal;
   }
 }
